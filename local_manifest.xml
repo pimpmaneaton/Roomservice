@@ -20,30 +20,32 @@
   <remove-project name="ResurrectionRemix/packages_apps_LineageParts" />
   <remove-project name="ResurrectionRemix/external_DUtils" />
   <remove-project name="ResurrectionRemix/android_packages_overlays_Resurrection" />
+  <remove-project name="ResurrectionRemix/frameworks_native" />
   <remove-project name="LineageOS/android_frameworks_av" />
   <remove-project name="LineageOS/android_packages_providers_MediaProvider" />
+  <remove-project name="LineageOS/android_packages_apps_PackageInstaller" />
+  <remove-project name="ResurrectionRemix/android_packages_services_Telecomm" />
 
   <project path="device/google/taimen" name="pimpmaneaton/device_google_taimen" remote="github" revision="o8.1" />
   <project path="device/google/wahoo" name="pimpmaneaton/device_google_wahoo" remote="github" revision="o8.1" />
   <project path="kernel/google/wahoo" name="pimpmaneaton/android_kernel_google_wahoo-1" remote="github" revision="o8.1" />
-  <project path="vendor/google" name="DirtyUnicorns/android_vendor_google" remote="github" revision="o8x" />
-  <project path="vendor/opengapps/build" name="aosp_build" revision="master" remote="opengapps" />
-  <project path="vendor/opengapps/sources/all" name="all" clone-depth="1" revision="master" remote="opengapps" />
-  <project path="vendor/opengapps/sources/arm" name="arm" clone-depth="1" revision="master" remote="opengapps" />
-  <project path="vendor/opengapps/sources/arm64" name="arm64" clone-depth="1" revision="master" remote="opengapps" />
+  <project path="vendor/google_devices" name="pimpmaneaton/proprietary_vendor_google_devices" remote="github" revision="o8.1" />
+  <!--<project path="vendor/google" name="pimpmaneaton/android_vendor_google" remote="github" revision="o8x" />-->
+  <project path="vendor/pixelgapps" name="pimpmaneaton/android_vendor_pixelgapps" remote="github" revision="o8x" />
   <project path="device/qcom/common" name="LineageOS/android_device_qcom_common" remote="github" revision="lineage-15.1" />
   <project path="frameworks/base" name="pimpmaneaton/android_frameworks_base"  remote="github" revision="o8.1" />
   <project path="frameworks/av" name="pimpmaneaton/android_frameworks_av"  remote="github" revision="o8.1" />
+  <project path="frameworks/native" name="pimpmaneaton/frameworks_native"  remote="github" revision="o8.1" />
   <project path="packages/apps/Settings" name="pimpmaneaton/Resurrection_packages_apps_Settings"  remote="github" revision="o8.1" />
   <project path="packages/apps/DUI" name="pimpmaneaton/packages_apps_DUI" remote="github" revision="o8.1" />
   <project path="build/make" name="pimpmaneaton/android_build" remote="github" revision="o8.1" />
   <project path="frameworks/opt/slimrecent" name="pimpmaneaton/frameworks_opt_slimrecent" remote="github" revision="o8.1" />
   <project path="packages/services/OmniJaws" name="pimpmaneaton/packages_services_OmniJaws" remote="github" revision="o8.1" />
+  <project path="packages/services/Telecomm" name="pimpmaneaton/android_packages_services_Telecomm"  remote="github" revision="o8.1" />
   <project path="packages/apps/OmniStyle" name="pimpmaneaton/android_packages_apps_OmniStyle" remote="github" revision="o8.1" />
   <project path="packages/apps/Gallery2" name="AquariOS/packages_apps_Gallery2" remote="github" revision="a8.1.0" />
-  <!--<project path="packages/apps/OmniSwitch" name="pimpmaneaton/android_packages_apps_OmniSwitch" remote="github" revision="o8.1" /> -->
+  <project path="packages/apps/OmniSwitch" name="pimpmaneaton/android_packages_apps_OmniSwitch" remote="github" revision="o8.1" />
   <project path="vendor/rr" name="pimpmaneaton/android_vendor_resurrection" remote="github" revision="o8.1" />
-  <!--<project path="vendor/google_devices" name="AICP/proprietary_vendor_google_devices" remote="github" revision="o8.1" />-->
   <project path="prebuilts/clang/host/linux-x86" name="DirtyUnicorns/android_prebuilts_clang_host_linux-x86" remote="github" revision="o8x" />
   <project path="bionic" name="pimpmaneaton/android_bionic" remote="github" revision="o8.1" />
   <project path="external/clang" name="DirtyUnicorns/android_external_clang" remote="github" revision="o8x" />
@@ -55,4 +57,5 @@
   <project path="external/DUtils" name="pimpmaneaton/external_DUtils" remote="github" revision="o8.1" />
   <project path="packages/overlays/Resurrection" name="pimpmaneaton/android_packages_overlays_Resurrection" remote="github" revision="o8.1" />
   <project path="packages/providers/MediaProvider" name="crdroidandroid/android_packages_providers_MediaProvider" remote="github" revision="8.1" />
+  <project path="packages/apps/PackageInstaller" name="DirtyUnicorns/android_packages_apps_PackageInstaller" remote="github" revision="o8x" />
 </manifest>
