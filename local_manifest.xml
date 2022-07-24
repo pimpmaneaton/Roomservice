@@ -62,11 +62,12 @@
 
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
+  <remove-project name="vendor_google_pixel" />
   <project path="device/google/raviole" name="pimpmaneaton/android_device_google_raviole" remote="github" revision="rd" />
   <project path="device/google/gs101" name="pimpmaneaton/android_device_google_gs101" remote="github" revision="rd" />
   <project path="device/google/raviole-kernel" name="StatiXOS/android_device_google_raviole-kernel" remote="github" revision="sc-v2" />
   <project path="kernel/google/raviole/raven" name="pimpmaneaton/android_kernel_google_raviole" remote="github" revision="rd" />
   <project path="vendor/google/interfaces" name="StatiXOS/android_vendor_google_interfaces" remote="github" revision="sc-v2" />
-  <project path="vendor/google/raven" name="StatiXOS/vendor_google_raven" remote="gitlab" revision="sc-v2" />
-  <project path="vendor/google/pixelparts" name="statixos/android_vendor_google_pixelparts" remote="gitlab" revision="sc-v2" />
+  <project path="vendor/google/raven" name="anayw2001/vendor_google_raven" remote="gitlab" revision="sc-v2" />
+  <project path="vendor/gms" name="pimpmaneaton/android_vendor_google_gms" remote="gitlab" revision="rd" />
 </manifest>
