@@ -69,6 +69,7 @@
   <project path="kernel/google/raviole/raven" name="pimpmaneaton/android_kernel_google_raviole" remote="github" revision="rd" />
   <project path="vendor/google/interfaces" name="StatiXOS/android_vendor_google_interfaces" remote="github" revision="sc-v2" />
   <project path="vendor/google/raven" name="pimpmaneaton/vendor_google_raven" remote="gitlab" revision="rd" />
+  <project path="vendor/google/oriole" name="pimpmaneaton/vendor_google_oriole" remote="gitlab" revision="rd" />  
   <project path="vendor/gms" name="pimpmaneaton/android_vendor_google_gms" remote="gitlab" revision="rd" />
 </manifest>
 
