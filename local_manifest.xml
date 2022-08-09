@@ -63,14 +63,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
   <remove-project name="vendor_google_pixel" />
+  <remove-project name="RiceDroid/android_frameworks_base" />
+  <remove-project name="RiceDroid/android_packages_apps_Settings" />
+  <remove-project name="RiceDroid/android_packages_apps_RiceDroidSettings" />
+  <remove-project name="RiceDroid/android_bootable_recovery" />
+  <remove-project name="RiceDroid/android_vendor_rice" />
+  <remove-project name="RiceDroid/android_hardware_google_pixel-sepolicy" />
+
+
   <project path="device/google/raviole" name="pimpmaneaton/android_device_google_raviole" remote="github" revision="rd" />
   <project path="device/google/gs101" name="pimpmaneaton/android_device_google_gs101" remote="github" revision="rd" />
   <project path="device/google/raviole-kernel" name="StatiXOS/android_device_google_raviole-kernel" remote="github" revision="sc-v2" />
   <project path="kernel/google/raviole/raven" name="pimpmaneaton/android_kernel_google_raviole" remote="github" revision="rd" />
   <project path="vendor/google/interfaces" name="StatiXOS/android_vendor_google_interfaces" remote="github" revision="sc-v2" />
   <project path="vendor/google/raven" name="pimpmaneaton/vendor_google_raven" remote="gitlab" revision="rd" />
-  <project path="vendor/google/oriole" name="pimpmaneaton/vendor_google_oriole" remote="gitlab" revision="rd" />  
+  <project path="vendor/google/oriole" name="pimpmaneaton/vendor_google_oriole" remote="gitlab" revision="rd" />
   <project path="vendor/gms" name="pimpmaneaton/android_vendor_google_gms" remote="gitlab" revision="rd" />
+  <project path="frameworks/base" name="pimpmaneaton/android_frameworks_base" remote="github" revision="rd" />
+  <project path="packages/apps/Settings" name="pimpmaneaton/android_packages_apps_Settings" remote="github" revision="rd" />
+  <project path="packages/apps/crDroidSettings" name="pimpmaneaton/android_packages_apps_RiceDroidSettings" remote="github" revision="rd" />
+  <project path="bootable/recovery" name="pimpmaneaton/android_bootable_recovery" remote="github" revision="rd" />
+  <project path="vendor/lineage" name="pimpmaneaton/android_vendor_rice" remote="github" revision="rd" />
+  <project path="hardware/google/pixel-sepolicy" name="pimpmaneaton/android_hardware_google_pixel-sepolicy" revision="rd" />
 </manifest>
 
 . build/envsetup.sh && lunch lineage_raven-userdebug && m bacon && m updatepackage
