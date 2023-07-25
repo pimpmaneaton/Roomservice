@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
     <project name="pimpmaneaton/android_packages_apps_PixelParts" path="packages/apps/PixelParts" remote="github" revision="thirteen"/>
-    <project name="pimpmaneaton/kernel_google_gs201" path="kernel/google/gs201/private/gs-google" remote="github" revision="thirteen"/>
+    <project name="pimpmaneaton/android_kernel_google_gs201" path="kernel/google/gs201/private/gs-google" remote="github" revision="thirteen"/>
     <project name="pimpmaneaton/android_device_google_gs101" path="device/google/gs101" remote="github" revision="thirteen"/>
     <project name="pimpmaneaton/android_device_google_raviole" path="device/google/raviole" remote="github" revision="thirteen"/>
     <project name="pimpmaneaton/proprietary_vendor_google_raven" path="vendor/google/raven" remote="gitlab" revision="thirteen"/>
