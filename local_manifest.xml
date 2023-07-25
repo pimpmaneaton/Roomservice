@@ -1,90 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-  <remote name="opengapps" fetch="https://github.com/opengapps/"  />
-
-  <remove-project name="ResurrectionRemix/android_frameworks_base" />
-  <remove-project name="ResurrectionRemix/Resurrection_packages_apps_Settings" />
-  <remove-project name="ResurrectionRemix/packages_apps_DUI" />
-  <remove-project name="ResurrectionRemix/android_build" />
-  <remove-project name="ResurrectionRemix/frameworks_opt_slimrecent" />
-  <remove-project name="ResurrectionRemix/packages_services_OmniJaws" />
-  <remove-project name="ResurrectionRemix/android_packages_apps_OmniStyle" />
-  <remove-project name="LineageOS/android_packages_apps_Gallery2" />
-  <remove-project name="ResurrectionRemix/android_vendor_resurrection" />
-  <remove-project name="platform/prebuilts/clang/host/linux-x86" />
-  <remove-project name="ResurrectionRemix/android_system_sepolicy" />
-  <remove-project name="ResurrectionRemix/device_rr_sepolicy" />
-  <remove-project name="LineageOS/android_bionic" />
-  <remove-project name="platform/external/clang" />
-  <remove-project name="ResurrectionRemix/lineage-sdk" />
-  <remove-project name="ResurrectionRemix/packages_apps_LineageParts" />
-  <remove-project name="ResurrectionRemix/external_DUtils" />
-  <remove-project name="ResurrectionRemix/android_packages_overlays_Resurrection" />
-  <remove-project name="ResurrectionRemix/frameworks_native" />
-  <remove-project name="LineageOS/android_frameworks_av" />
-  <remove-project name="LineageOS/android_packages_providers_MediaProvider" />
-  <remove-project name="LineageOS/android_packages_apps_PackageInstaller" />
-  <remove-project name="ResurrectionRemix/android_packages_services_Telecomm" />
-
-  <project path="device/google/taimen" name="pimpmaneaton/device_google_taimen" remote="github" revision="o8.1" />
-  <project path="device/google/wahoo" name="pimpmaneaton/device_google_wahoo" remote="github" revision="o8.1" />
-  <project path="kernel/google/wahoo" name="pimpmaneaton/android_kernel_google_wahoo-1" remote="github" revision="o8.1" />
-  <project path="vendor/google_devices" name="pimpmaneaton/proprietary_vendor_google_devices" remote="github" revision="o8.1" />
-  <!--<project path="vendor/google" name="pimpmaneaton/android_vendor_google" remote="github" revision="o8x" />-->
-  <project path="vendor/pixelgapps" name="pimpmaneaton/android_vendor_pixelgapps" remote="github" revision="o8x" />
-  <project path="device/qcom/common" name="LineageOS/android_device_qcom_common" remote="github" revision="lineage-15.1" />
-  <project path="frameworks/base" name="pimpmaneaton/android_frameworks_base"  remote="github" revision="o8.1" />
-  <project path="frameworks/av" name="pimpmaneaton/android_frameworks_av"  remote="github" revision="o8.1" />
-  <project path="frameworks/native" name="pimpmaneaton/frameworks_native"  remote="github" revision="o8.1" />
-  <project path="packages/apps/Settings" name="pimpmaneaton/Resurrection_packages_apps_Settings"  remote="github" revision="o8.1" />
-  <project path="packages/apps/DUI" name="pimpmaneaton/packages_apps_DUI" remote="github" revision="o8.1" />
-  <project path="build/make" name="pimpmaneaton/android_build" remote="github" revision="o8.1" />
-  <project path="frameworks/opt/slimrecent" name="pimpmaneaton/frameworks_opt_slimrecent" remote="github" revision="o8.1" />
-  <project path="packages/services/OmniJaws" name="pimpmaneaton/packages_services_OmniJaws" remote="github" revision="o8.1" />
-  <project path="packages/services/Telecomm" name="pimpmaneaton/android_packages_services_Telecomm"  remote="github" revision="o8.1" />
-  <project path="packages/apps/OmniStyle" name="pimpmaneaton/android_packages_apps_OmniStyle" remote="github" revision="o8.1" />
-  <project path="packages/apps/Gallery2" name="AquariOS/packages_apps_Gallery2" remote="github" revision="a8.1.0" />
-  <project path="packages/apps/OmniSwitch" name="pimpmaneaton/android_packages_apps_OmniSwitch" remote="github" revision="o8.1" />
-  <project path="vendor/rr" name="pimpmaneaton/android_vendor_resurrection" remote="github" revision="o8.1" />
-  <project path="prebuilts/clang/host/linux-x86" name="DirtyUnicorns/android_prebuilts_clang_host_linux-x86" remote="github" revision="o8x" />
-  <project path="bionic" name="pimpmaneaton/android_bionic" remote="github" revision="o8.1" />
-  <project path="external/clang" name="DirtyUnicorns/android_external_clang" remote="github" revision="o8x" />
-  <!--<project path="development" name="aosp-mirror/platform_development" remote="github" revision="refs/tags/android-8.1.0_r20" />-->
-  <project path="system/sepolicy" name="pimpmaneaton/android_system_sepolicy" remote="github" revision="o8.1" />
-  <project path="device/rr/sepolicy" name="pimpmaneaton/device_rr_sepolicy" remote="github" revision="o8.1" />
-  <project path="lineage-sdk" name="pimpmaneaton/lineage-sdk" remote="github" revision="o8.1" />
-  <project path="packages/apps/LineageParts" name="pimpmaneaton/packages_apps_LineageParts" remote="github" revision="o8.1" />
-  <project path="external/DUtils" name="pimpmaneaton/external_DUtils" remote="github" revision="o8.1" />
-  <project path="packages/overlays/Resurrection" name="pimpmaneaton/android_packages_overlays_Resurrection" remote="github" revision="o8.1" />
-  <project path="packages/providers/MediaProvider" name="crdroidandroid/android_packages_providers_MediaProvider" remote="github" revision="8.1" />
-  <project path="packages/apps/PackageInstaller" name="DirtyUnicorns/android_packages_apps_PackageInstaller" remote="github" revision="o8x" />
-</manifest>
-
-<?xml version="1.0" encoding="UTF-8"?>
-<manifest>
-  <remove-project name="vendor_google_pixel" />
-  <remove-project name="RiceDroid/android_frameworks_base" />
-  <remove-project name="RiceDroid/android_packages_apps_Settings" />
-  <remove-project name="RiceDroid/android_packages_apps_RiceDroidSettings" />
-  <remove-project name="RiceDroid/android_bootable_recovery" />
-  <remove-project name="RiceDroid/android_vendor_rice" />
-  <remove-project name="RiceDroid/android_hardware_google_pixel-sepolicy" />
-
-
-  <project path="device/google/raviole" name="pimpmaneaton/android_device_google_raviole" remote="github" revision="rd" />
-  <project path="device/google/gs101" name="pimpmaneaton/android_device_google_gs101" remote="github" revision="rd" />
-  <project path="device/google/raviole-kernel" name="StatiXOS/android_device_google_raviole-kernel" remote="github" revision="sc-v2" />
-  <project path="kernel/google/raviole/raven" name="pimpmaneaton/android_kernel_google_raviole" remote="github" revision="rd" />
-  <project path="vendor/google/interfaces" name="StatiXOS/android_vendor_google_interfaces" remote="github" revision="sc-v2" />
-  <project path="vendor/google/raven" name="pimpmaneaton/vendor_google_raven" remote="gitlab" revision="rd" />
-  <project path="vendor/google/oriole" name="pimpmaneaton/vendor_google_oriole" remote="gitlab" revision="rd" />
-  <project path="vendor/gms" name="pimpmaneaton/android_vendor_google_gms" remote="gitlab" revision="rd" />
-  <project path="frameworks/base" name="pimpmaneaton/android_frameworks_base" remote="github" revision="rd" />
-  <project path="packages/apps/Settings" name="pimpmaneaton/android_packages_apps_Settings" remote="github" revision="rd" />
-  <project path="packages/apps/crDroidSettings" name="pimpmaneaton/android_packages_apps_RiceDroidSettings" remote="github" revision="rd" />
-  <project path="bootable/recovery" name="pimpmaneaton/android_bootable_recovery" remote="github" revision="rd" />
-  <project path="vendor/lineage" name="pimpmaneaton/android_vendor_rice" remote="github" revision="rd" />
-  <project path="hardware/google/pixel-sepolicy" name="pimpmaneaton/android_hardware_google_pixel-sepolicy" revision="rd" />
+    <project name="Evolution-X-Devices/packages_apps_PixelParts" path="packages/apps/PixelParts" remote="github" revision="tiramisu"/>
+    <project name="pimpmaneaton/kernel_google_gs201" path="kernel/google/gs201/private/gs-google" remote="github" revision="thirteen"/>
+    <project name="pimpmaneaton/android_device_google_gs101" path="device/google/gs101" remote="github" revision="thirteen"/>
+    <project name="pimpmaneaton/android_device_google_raviole" path="device/google/raviole" remote="github" revision="thirteen"/>
+    <project name="pimpmaneaton/proprietary_vendor_google_raven" path="vendor/google/raven" remote="gitlab" revision="thirteen"/>
 </manifest>
 
 . build/envsetup.sh && lunch lineage_raven-userdebug && m bacon && m updatepackage
