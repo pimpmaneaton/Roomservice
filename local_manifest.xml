@@ -5,6 +5,7 @@
     <project name="pimpmaneaton/android_device_google_gs101" path="device/google/gs101" remote="github" revision="thirteen"/>
     <project name="pimpmaneaton/android_device_google_raviole" path="device/google/raviole" remote="github" revision="thirteen"/>
     <project name="pimpmaneaton/proprietary_vendor_google_raven" path="vendor/google/raven" remote="gitlab" revision="thirteen"/>
+    <project name="pimpmaneaton/proprietary_vendor_google_oriole" path="vendor/google/oriole" remote="gitlab" revision="thirteen"/>
 </manifest>
 
 . build/envsetup.sh && lunch lineage_raven-userdebug && m bacon && m updatepackage
