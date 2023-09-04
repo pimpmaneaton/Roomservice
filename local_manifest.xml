@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
 
-    <remove-project name="kernel/google-modules/amplifiers" />
-    <remove-project name="kernel/google-modules/aoc" />
+    <!--<remove-project name="kernel/google-modules/amplifiers" />
     <remove-project name="kernel/google-modules/aoc-ipc" />
     <remove-project name="kernel/google-modules/bluetooth/broadcom" />
     <remove-project name="kernel/google-modules/bluetooth/qcom" />
@@ -12,9 +11,9 @@
     <remove-project name="kernel/google-modules/edgetpu/abrolhos" />
     <remove-project name="kernel/google-modules/edgetpu/janeiro" />
     <remove-project name="kernel/google-modules/fingerprint/fpc" />
-    <remove-project name="kernel/google-modules/gpu" />
+
     <remove-project name="kernel/google-modules/gxp/gs201" />
-    <remove-project name="kernel/google-modules/lwis" />
+
     <remove-project name="kernel/google-modules/nfc" />
     <remove-project name="kernel/google-modules/power/reset" />
     <remove-project name="kernel/google-modules/sensors/hall_sensor" />
@@ -27,19 +26,37 @@
     <remove-project name="kernel/google-modules/touch/synaptics_touch" />
     <remove-project name="kernel/google-modules/uwb" />
     <remove-project name="kernel/google-modules/video/gchips" />
-    <remove-project name="kernel/google-modules/wlan/bcmdhd/bcm4389" />
     <remove-project name="kernel/google-modules/wlan/syna/dhd43752p" />
     <remove-project name="kernel/google-modules/wlan/qcom/wcn6740/cnss2" />    
     <remove-project name="kernel/google-modules/wlan/qcom/wcn6740/wlan" />    
-    <remove-project name="kernel/google-modules/wlan/wlan_ptracker" />
+    <remove-project name="kernel/google-modules/wlan/wlan_ptracker" /> -->
 
-    <project name="pimpmaneaton/kernel_gs" path="kernel/google/gs201/private/gs-google" remote="github" revision="testing"/>
- 
-    <!--<project name="pimpmaneaton/android_kernel_google_gs201" path="kernel/google/gs201/private/gs-google" remote="github"         revision="thirteen"/>
-        <project name="pimpmaneaton/google_modules_gs201" path="kernel/google/gs201/private/google-modules" remote="github" revision="thirteen"/>-->
+    <!-- <project name="pimpmaneaton/kernel_gs" path="kernel/google/gs201/private/gs-google" remote="github" revision="testing"/>
+    <project name="pimpmaneaton/google_modules_gs201" path="kernel/google/gs201/private/google-modules" remote="github" revision="thirteen"/>
+    <project name="pimpmaneaton/Kirisakura_Raviole" path="kernel/google/gs201/private/gs-google" remote="github" revision="thirteen"/>-->
+    
+    <remove-project name="kernel/google-modules/aoc"/>
+    <remove-project name="kernel/google-modules/wlan/bcmdhd/bcm4389" />
+    <remove-project name="kernel/google-modules/gpu" />
+    <remove-project name="RisingTechOSS/android_bootable_recovery" />
+    <remove-project name="minaripenguin/android_vendor_gms" />
+    <remove-project name="RisingTechOSS/android_vendor_rising" />
+    <project name="pimpmaneaton/gm-aoc" path="kernel/google/gs201/private/google-modules/aoc" remote="github" revision="thirteen"/>
+    <project name="pimpmaneaton/gm-bcm4389" path="kernel/google/gs201/private/google-modules/wlan/bcmdhd4389" remote="github" revision="thirteen"/>
+    <project name="pimpmaneaton/gm-gpu" path="kernel/google/gs201/private/google-modules/gpu" remote="github" revision="thirteen"/>
+    <project name="pimpmaneaton/android_bootable_recovery" path="bootable/recovery" remote="github" revision="thirteen"/>
+    <project name="pimpmaneaton/android_vendor_gms" path="vendor/gms" remote="gitlab" revision="thirteen" />
+    <project name="pimpmaneaton/android_vendor_rising" path="vendor/lineage" remote="github" revision="thirteen" />
+
+
+    <project name="pimpmaneaton/android_kernel_google_gs201" path="kernel/google/gs201/private/gs-google" remote="github" revision="thirteen"/>
+    <project path="kernel/google/gs201/private/gs-google/KernelSU" name="hdpk/KernelSU" remote="gitlab" revision="main" >
+      <linkfile dest="kernel/google/gs201/private/gs-google/drivers/kernelsu" src="kernel"/>
+    </project>
+
     <project name="pimpmaneaton/android_packages_apps_PixelParts" path="packages/apps/PixelParts" remote="github" revision="thirteen"/>
-    <project name="pimpmaneaton/android_device_google_gs101" path="device/google/gs101" remote="github" revision="testing"/>
-    <project name="pimpmaneaton/android_device_google_raviole" path="device/google/raviole" remote="github" revision="testing"/>
+    <project name="pimpmaneaton/android_device_google_gs101" path="device/google/gs101" remote="github" revision="thirteen"/>
+    <project name="pimpmaneaton/android_device_google_raviole" path="device/google/raviole" remote="github" revision="thirteen"/>
     <project name="pimpmaneaton/proprietary_vendor_google_raven" path="vendor/google/raven" remote="gitlab" revision="thirteen"/>
     <project name="pimpmaneaton/proprietary_vendor_google_oriole" path="vendor/google/oriole" remote="gitlab" revision="thirteen"/>
 </manifest>
