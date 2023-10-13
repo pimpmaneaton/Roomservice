@@ -7,6 +7,8 @@
     <remove-project name="RisingTechOSS/android_packages_apps_Settings" />
     <remove-project name="RisingTechOSS/android_packages_apps_Personalizations" />
     <remove-project name="RisingTechOSS/vendor_pixel-framework" />
+    <remove-project name="RisingTechOSS/android_vendor_rising" />
+    <remove-project name="RisingTechOSS/android_vendor_addons" />
 
     <project name="pimpmaneaton/android_bootable_recovery" path="bootable/recovery" remote="github" revision="thirteen"/>
     <project name="pimpmaneaton/android_vendor_gms" path="vendor/gms" remote="gitlab" revision="thirteen" />
@@ -16,10 +18,12 @@
     <project name="pimpmaneaton/android_device_google_raviole" path="device/google/raviole" remote="github" revision="thirteen"/>
     <project name="pimpmaneaton/proprietary_vendor_google_raven" path="vendor/google/raven" remote="gitlab" revision="thirteen"/>
     
-    <project path="vendor/pixel-framework" name="pimpmaneaton/vendor_pixel-framework" revision="test" />
-    <project path="packages/apps/Personalizations" name="pimpmaneaton/android_packages_apps_Personalizations" groups="pdk-fs" revision="test" />
-    <project path="packages/apps/Settings" name="pimpmaneaton/android_packages_apps_Settings" groups="pdk-fs" revision="test" />
-    <project path="frameworks/base" name="pimpmaneaton/android_frameworks_base" groups="pdk-cw-fs,pdk-fs" revision="test" />
+    <project path="vendor/pixel-framework" name="pimpmaneaton/vendor_pixel-framework" revision="thirteen" />
+    <project path="packages/apps/Personalizations" name="pimpmaneaton/android_packages_apps_Personalizations" groups="pdk-fs" revision="thirteen" />
+    <project path="packages/apps/Settings" name="pimpmaneaton/android_packages_apps_Settings" groups="pdk-fs" revision="thirteen" />
+    <project path="frameworks/base" name="pimpmaneaton/android_frameworks_base" groups="pdk-cw-fs,pdk-fs" revision="thirteen" />
+    <project path="vendor/lineage" name="pimpmaneaton/android_vendor_rising" revision="thirteen" />
+    <project path="vendor/addons" name="pimpmaneaton/android_vendor_addons" revision="thirteen" />
 </manifest>
 
 . build/envsetup.sh && lunch lineage_raven-userdebug && m bacon && m updatepackage
