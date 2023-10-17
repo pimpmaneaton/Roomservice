@@ -32,5 +32,6 @@ ln -s /usr/bin/python3 /usr/local/bin/python
 
 Symlink NvME drive to Home
 ln -s /media/pimpmaneaton/Roms/RinsingOS ~/RisingOS
+ln -s /media/pimpmaneaton/Roms/RisingUDC ~/RisingUDC
 
 alias mvbld mv /out/device/raven/risingOS-*.zip ~/RavenBuilds/
