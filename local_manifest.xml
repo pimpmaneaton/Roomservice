@@ -1,14 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
 
+    <remove-project name="RisingTechOSS/android_build" />
     <remove-project name="RisingTechOSS/android_bootable_recovery" />
     <remove-project name="minaripenguin/android_vendor_gms" />
     <remove-project name="RisingTechOSS/android_frameworks_base" />
+    <remove-project name="RisingTechOSS/android_frameworks_native" />
     <remove-project name="RisingTechOSS/android_packages_apps_Settings" />
     <remove-project name="RisingTechOSS/android_packages_apps_Personalizations" />
     <remove-project name="RisingTechOSS/vendor_pixel-framework" />
     <remove-project name="RisingTechOSS/android_vendor_rising" />
     <remove-project name="RisingTechOSS/android_vendor_addons" />
+    <remove-project name="RisingTechOSS/android_packages_modules_Bluetooth" />
+    
+    <project path="build/make" name="pimpmaneaton/android_build" groups="pdk" revision="thirteen" >
+    <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
+    <linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default" />
+    <linkfile src="core" dest="build/core" />
+    <linkfile src="envsetup.sh" dest="build/envsetup.sh" />
+    <linkfile src="target" dest="build/target" />
+    <linkfile src="tools" dest="build/tools" />
+    </project>
 
     <project name="pimpmaneaton/android_bootable_recovery" path="bootable/recovery" remote="github" revision="thirteen"/>
     <project name="pimpmaneaton/android_vendor_gms" path="vendor/gms" remote="gitlab" revision="thirteen" />
@@ -21,9 +33,12 @@
     <project path="vendor/pixel-framework" name="pimpmaneaton/vendor_pixel-framework" revision="thirteen" />
     <project path="packages/apps/Personalizations" name="pimpmaneaton/android_packages_apps_Personalizations" groups="pdk-fs" revision="thirteen" />
     <project path="packages/apps/Settings" name="pimpmaneaton/android_packages_apps_Settings" groups="pdk-fs" revision="thirteen" />
+    <project path="packages/modules/Bluetooth" name="pimpmaneaton/android_packages_modules_Bluetooth" groups="pdk" revision="thirteen"/>
     <project path="frameworks/base" name="pimpmaneaton/android_frameworks_base" groups="pdk-cw-fs,pdk-fs" revision="thirteen" />
+    <project path="frameworks/native" name="pimpmaneaton/android_frameworks_native" groups="pdk" revision="thirteen" />
     <project path="vendor/lineage" name="pimpmaneaton/android_vendor_rising" revision="thirteen" />
     <project path="vendor/addons" name="pimpmaneaton/android_vendor_addons" revision="thirteen" />
+
 </manifest>
 
 . build/envsetup.sh && lunch lineage_raven-userdebug && m bacon && m updatepackage
