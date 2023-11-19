@@ -4,14 +4,17 @@
     <remove-project name="RisingTechOSS/android_build" />
     <remove-project name="RisingTechOSS/android_bootable_recovery" />
     <remove-project name="minaripenguin/android_vendor_gms" />
+    <remove-project name="RisingTechOSS/android_frameworks_av" />
     <remove-project name="RisingTechOSS/android_frameworks_base" />
     <remove-project name="RisingTechOSS/android_frameworks_native" />
+    <remove-project name="LineageOS/android_frameworks_opt_telephony" />
     <remove-project name="RisingTechOSS/android_packages_apps_Settings" />
     <remove-project name="RisingTechOSS/android_packages_apps_Personalizations" />
     <remove-project name="RisingTechOSS/vendor_pixel-framework" />
     <remove-project name="RisingTechOSS/android_vendor_rising" />
     <remove-project name="RisingTechOSS/android_vendor_addons" />
     <remove-project name="RisingTechOSS/android_packages_modules_Bluetooth" />
+    <remove-project name="RisingTechOSS/android_system_core" />
     
     <project path="build/make" name="pimpmaneaton/android_build" groups="pdk" revision="thirteen" >
     <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
@@ -21,23 +24,31 @@
     <linkfile src="target" dest="build/target" />
     <linkfile src="tools" dest="build/tools" />
     </project>
-
-    <project name="pimpmaneaton/android_bootable_recovery" path="bootable/recovery" remote="github" revision="thirteen"/>
-    <project name="pimpmaneaton/android_vendor_gms" path="vendor/gms" remote="gitlab" revision="thirteen" />
+    
     <project name="pimpmaneaton/android_kernel_google_gs201" path="kernel/google/gs201/private/gs-google" remote="github" revision="thirteen"/>
-    <project name="pimpmaneaton/android_packages_apps_PixelParts" path="packages/apps/PixelParts" remote="github" revision="tiramisu"/>
     <project name="pimpmaneaton/android_device_google_gs101" path="device/google/gs101" remote="github" revision="thirteen"/>
     <project name="pimpmaneaton/android_device_google_raviole" path="device/google/raviole" remote="github" revision="thirteen"/>
     <project name="pimpmaneaton/proprietary_vendor_google_raven" path="vendor/google/raven" remote="gitlab" revision="thirteen"/>
     
-    <project path="vendor/pixel-framework" name="pimpmaneaton/vendor_pixel-framework" revision="thirteen" />
-    <project path="packages/apps/Personalizations" name="pimpmaneaton/android_packages_apps_Personalizations" groups="pdk-fs" revision="thirteen" />
-    <project path="packages/apps/Settings" name="pimpmaneaton/android_packages_apps_Settings" groups="pdk-fs" revision="thirteen" />
+    <project path="bootable/recovery" name="pimpmaneaton/android_bootable_recovery" remote="github" revision="thirteen"/>
+
+    <project path="packages/apps/Personalizations" name="pimpmaneaton/RisingOS_android_packages_apps_Personalizations" remote="private" groups="pdk-fs" revision="thirteen" />
+    <project path="packages/apps/PixelParts" name="pimpmaneaton/android_packages_apps_PixelParts" remote="github" revision="tiramisu"/>
+    <project path="packages/apps/Settings" name="pimpmaneaton/RisingOS_android_packages_apps_Settings" remote="private" groups="pdk-fs" revision="thirteen" />
+
     <project path="packages/modules/Bluetooth" name="pimpmaneaton/android_packages_modules_Bluetooth" groups="pdk" revision="thirteen"/>
-    <project path="frameworks/base" name="pimpmaneaton/android_frameworks_base" groups="pdk-cw-fs,pdk-fs" revision="thirteen" />
+    
+    <project path="frameworks/av" name="InterstellarUI/android_frameworks_av" groups="pdk" revision="thirteen" />
+    <project path="frameworks/base" name="pimpmaneaton/RisingOS_android_frameworks_base" remote="private" revision="thirteen" />
     <project path="frameworks/native" name="pimpmaneaton/android_frameworks_native" groups="pdk" revision="thirteen" />
-    <project path="vendor/lineage" name="pimpmaneaton/android_vendor_rising" revision="thirteen" />
+    <project path="frameworks/opt/telephony" name="pimpmaneaton/android_frameworks_opt_telephony" groups="pdk" revision="thirteen" />
+
+    <project path="system/core" name="pimpmaneaton/android_system_core" groups="pdk" revision="thirteen" />
+
     <project path="vendor/addons" name="pimpmaneaton/android_vendor_addons" revision="thirteen" />
+    <project path="vendor/gms" name="pimpmaneaton/android_vendor_gms" remote="gitlab" revision="thirteen" />
+    <project path="vendor/pixel-framework" name="pimpmaneaton/vendor_pixel-framework" revision="thirteen" />
+    <project path="vendor/lineage" name="pimpmaneaton/android_vendor_rising" revision="thirteen" />
 
 </manifest>
 
