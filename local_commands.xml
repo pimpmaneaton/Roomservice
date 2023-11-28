@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+. build/envsetup.sh && lunch lineage_raven-userdebug && m bacon && m updatepackage
+
+ln -s /usr/bin/python3 /usr/local/bin/python
+
+Symlink NvME drive to Home
+ln -s /media/pimpmaneaton/Roms/RinsingOS ~/RisingOS
+ln -s /media/pimpmaneaton/Roms/RisingUDC ~/RisingUDC
+
+alias mvbld mv /out/device/raven/risingOS-*.zip ~/RavenBuilds/
+
+sudo ln -s /usr/lib/x86_64-linux-gnu/libncursesw.so.6.4 /usr/lib/libncurses.so.5
+sudo ln -s /usr/lib/x86_64-linux-gnu/libtinfo.so.6.4 /usr/lib/libtinfo.so.5
