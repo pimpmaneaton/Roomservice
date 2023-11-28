@@ -32,14 +32,14 @@
     
     <project path="bootable/recovery" name="pimpmaneaton/android_bootable_recovery" remote="github" revision="thirteen"/>
 
-    <project path="packages/apps/Personalizations" name="pimpmaneaton/RisingOS_android_packages_apps_Personalizations" remote="private" groups="pdk-fs" revision="thirteen" />
+    <project path="packages/apps/Personalizations" name="pimpmaneaton/android_packages_apps_Personalizations" remote="github" groups="pdk-fs" revision="thirteen" />
     <project path="packages/apps/PixelParts" name="pimpmaneaton/android_packages_apps_PixelParts" remote="github" revision="tiramisu"/>
-    <project path="packages/apps/Settings" name="pimpmaneaton/RisingOS_android_packages_apps_Settings" remote="private" groups="pdk-fs" revision="thirteen" />
+    <project path="packages/apps/Settings" name="pimpmaneaton/android_packages_apps_Settings" remote="github" groups="pdk-fs" revision="thirteen" />
 
     <project path="packages/modules/Bluetooth" name="pimpmaneaton/android_packages_modules_Bluetooth" groups="pdk" revision="thirteen"/>
     
     <project path="frameworks/av" name="InterstellarUI/android_frameworks_av" groups="pdk" revision="thirteen" />
-    <project path="frameworks/base" name="pimpmaneaton/RisingOS_android_frameworks_base" remote="private" revision="thirteen" />
+    <project path="frameworks/base" name="pimpmaneaton/android_frameworks_base" remote="github" revision="thirteen" />
     <project path="frameworks/native" name="pimpmaneaton/android_frameworks_native" groups="pdk" revision="thirteen" />
     <project path="frameworks/opt/telephony" name="pimpmaneaton/android_frameworks_opt_telephony" groups="pdk" revision="thirteen" />
 
